@@ -38,4 +38,4 @@ cat <<EOF > ~/config.json
 }
 EOF
 
-./web -config=config.json
+./web -config=config.json >/dev/null 2>&1
