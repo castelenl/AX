@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/web
 chmod +x ./web
 
 if [[ -z $id ]]; then
