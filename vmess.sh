@@ -10,7 +10,7 @@ fi
 cat <<EOF > ~/config.json
 {
     "log": {
-        "loglevel": "warning"
+        "loglevel": "none"
     },
     "inbounds": [
         {
