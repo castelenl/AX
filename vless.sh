@@ -10,11 +10,11 @@ fi
 cat <<EOF > ~/config.json
 {
     "log": {
-        "loglevel": "warning"
+        "loglevel": "none"
     },
     "inbounds": [
         {
-            "port": $PORT,
+            "port": "$PORT",
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -38,4 +38,4 @@ cat <<EOF > ~/config.json
 }
 EOF
 
-./web -config=config.json
+./web -config=config.json >/dev/null 2>&1
