@@ -17,19 +17,19 @@
 ### vmess
 
 ```shell
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vmess.sh && chmod +x ./vmess.sh
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/vmess.sh && chmod +x ./vmess.sh
 ```
 
 ### vless
 
 ```shell
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/vless.sh && chmod +x ./vless.sh
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/vless.sh && chmod +x ./vless.sh
 ```
 
 ### trojan
 
 ```shell
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/trojan.sh && chmod +x ./trojan.sh
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/trojan.sh && chmod +x ./trojan.sh
 ```
 
 2. 修改配置
