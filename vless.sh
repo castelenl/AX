@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -f web config.json
 wget -N https://raw.githubusercontent.com/castelenl/AX/main/web
 chmod +x ./web
 
