@@ -32,10 +32,10 @@ wget -N https://raw.githubusercontent.com/castelenl/AX/main/vless.sh && chmod +x
 wget -N https://raw.githubusercontent.com/castelenl/AX/main/trojan.sh && chmod +x ./trojan.sh
 ```
 
-### trojan
+### ss
 
 ```shell
-wget -N https://raw.githubusercontent.com/castelenl/AX/main/trojan.sh && chmod +x ./trojan.sh
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/ss.sh && chmod +x ./ss.sh
 ```
 
 2. 修改配置
