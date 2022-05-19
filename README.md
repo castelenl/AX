@@ -32,6 +32,12 @@ wget -N https://raw.githubusercontent.com/castelenl/AX/main/vless.sh && chmod +x
 wget -N https://raw.githubusercontent.com/castelenl/AX/main/trojan.sh && chmod +x ./trojan.sh
 ```
 
+### trojan
+
+```shell
+wget -N https://raw.githubusercontent.com/castelenl/AX/main/trojan.sh && chmod +x ./trojan.sh
+```
+
 2. 修改配置
 
 ![image](https://user-images.githubusercontent.com/70625361/168480560-7012e386-3ebc-4fa6-961c-db6ca8b4cd68.png)
