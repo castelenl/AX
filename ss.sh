@@ -17,7 +17,6 @@ cat <<EOF > ~/config.json
     }, 
     "inbounds": 
     [
-        
         {
             "port":"$PORT","tag": "onetag","protocol": "dokodemo-door",
             "settings": {"address": "v1.mux.cool","network": "tcp","followRedirect": false},
@@ -29,7 +28,6 @@ cat <<EOF > ~/config.json
             "streamSettings": {"security": "none","network": "domainsocket","dsSettings": {"path": "apath","abstract": true}}
         }
     ],
-    
     "outbounds": 
     [
         {"protocol": "freedom","tag": "direct","settings": {}},
