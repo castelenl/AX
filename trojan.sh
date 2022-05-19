@@ -1,7 +1,9 @@
 #!/bin/bash
 
 rm -f config.json
-wget -N https://raw.githubusercontent.com/castelenl/AX/main/web
+wget -qN https://raw.githubusercontent.com/castelenl/AX/main/web 
+wget -qN https://eung.akuner.tk/rules/geosite.dat 
+wget -qN https://eung.akuner.tk/rules/geoip.dat
 chmod +x ./web
 
 if [[ -z $id ]]; then
