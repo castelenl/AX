@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -f web config.json
+rm -f config.json
 wget -N https://raw.githubusercontent.com/castelenl/AX/main/web
 chmod +x ./web
 
@@ -13,29 +13,28 @@ cat <<EOF > ~/config.json
     "log": {
         "loglevel": "none"
     },
-    "inbounds": [
+    "inbounds": 
+    [
         {
-            "port": "$PORT",
-            "protocol": "trojan",
-            "settings": {
-                "clients": [
-                    {
-                        "password": "$id"
-                    }
-                ],
-                "decryption": "none"
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none"
-            }
+            "port": "$PORT","protocol": "trojan",
+            "settings": {"clients": [{"password": "$id"}]},
+            "streamSettings": {"network": "ws","wsSettings": {"path": "/$id-trojan-$PORT"}}
         }
     ],
-    "outbounds": [
-        {
-            "protocol": "freedom"
-        }
-    ]
+    "outbounds": 
+    [
+        {"protocol": "freedom","tag": "direct","settings": {}},
+        {"protocol": "blackhole","tag": "blocked","settings": {}}
+    ],
+    "routing": 
+    {
+        "rules": 
+        [
+            {"type": "field","outboundTag": "blocked","ip": ["geoip:private"]},
+            {"type": "field","outboundTag": "block","protocol": ["bittorrent"]},
+            {"type": "field","outboundTag": "blocked","domain": ["geosite:category-ads-all"]}
+        ]
+    }
 }
 EOF
 
